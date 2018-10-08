@@ -19,13 +19,20 @@ The current progress is passed in the state.
 
 - Create a Value of type List of ProgressIcon types. 
 
-- Add your icons.  The order in the list controls the order they are displayed.
+- Add your icons.  The order in the list controls the order they are displayed e.g.
+        
+        key | label | name | value
+        ==========================
+        1   | Step 1 | First Step | envelope
+        2   | Step 2 | Second Step | wrench
 
 - Add a component to your page, any type, save it then change it's "componentType" to "IconProgressBar" in the metadata editor and save it.
 e.g. 
             "componentType": "IconProgressBar",
 
 - Now set the component's "Data Source" to the list of ProgressIcon you created and set it's "State" to a field containing the current processes state which matches one of the icon's "key" field values.
+
+- In your flow you can then set the field containing the key to the appropriate value using an "Operator" or a macro.
 
 
 
@@ -36,5 +43,5 @@ You can add attributes to the component to control it's appearance: -
 - CompleteColour  - String - A standard colour name or a #rrggbb colour definition - default is #3797ff
 - ActiveColour  - String - A standard colour name or a #rrggbb colour definition - default is black
 - IncompleteColour  - String - A standard colour name or a #rrggbb colour definition - default is #bbbbbb
- -IconSize    - Number - the font point size for the icons - default is "16" (16pt)
+- IconSize    - Number - the font point size for the icons - default is "16" (16pt)
 
