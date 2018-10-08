@@ -1,0 +1,36 @@
+.icon-progress-bar
+{
+    padding-top: 30px;
+    /*border: 1px solid black;*/
+}
+
+.icon-progress-bar-inner
+{
+    display: flex;
+    justify-content: space-between;
+    /*border: 1px solid black;*/
+}
+
+.icon-progress-bar-icon
+{
+    display: inline-block;
+    font-size: 16pt;
+    /*border: 1px solid black;*/
+}
+
+.icon-progress-bar-icon-complete
+{
+    color: #3797ff;
+}
+
+.icon-progress-bar-icon-active
+{
+    color: black;
+}
+
+.icon-progress-bar-icon-incomplete
+{
+    color: #bbbbbb;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJJY29uUHJvZ3Jlc3NCYXIuY3NzIiwic291cmNlUm9vdCI6IiJ9*/
