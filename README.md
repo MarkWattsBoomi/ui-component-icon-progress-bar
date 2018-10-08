@@ -17,7 +17,7 @@ The current progress is passed in the state.
     name - String - A unique name to describe the stage represented by this item - not used but for your own reference;
     value - String - The name of a bootstrap glyph icon to display.  The name minus the common "glyphicon-" part so e.g. "envelope" for "glyphicon-envelope".
 
-- Create a Value of type List of ProgressIcon types. 
+- Create a Value of type List of ProgressIcon types e.g. "ProgressIcons". 
 
 - Add your icons.  The order in the list controls the order they are displayed e.g.
         
@@ -30,9 +30,18 @@ The current progress is passed in the state.
 e.g. 
             "componentType": "IconProgressBar",
 
-- Now set the component's "Data Source" to the list of ProgressIcon you created and set it's "State" to a field containing the current processes state which matches one of the icon's "key" field values.
+- Add a String value to hold your flow's current progress e.g. "CurrentProgress".
+
+- Set the component's "Data Source" to the list of ProgressIcon you created (e.g. ProgressIcons").
+
+- Set the component's "State" to a the containing the current processes state (e.g. CurrentProgress). 
 
 - In your flow you can then set the field containing the key to the appropriate value using an "Operator" or a macro.
+
+
+##### Note: the value in the state must match one of the keys in the list.
+
+
 
 
 
