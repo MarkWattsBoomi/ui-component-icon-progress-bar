@@ -10,6 +10,14 @@ The current progress is passed in the state.
 
 - Grab the files from the /dist folder and import into your tenant.
 
+- Add the files to your player code like this: -
+        requires: ['core', 'bootstrap3'],
+        customResources: [
+                    'https://s3.amazonaws.com/files-manywho-com/<tenant-id>/IconProgressBar.css',
+                    'https://s3.amazonaws.com/files-manywho-com/<tenant-id>/IconProgressBar.js'
+                    ],
+
+
 - Define a type called ProgressIcon and give it these attributes: -
 
     key - String - The key for this an icon.  This will correspond to the state field value
